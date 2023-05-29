@@ -1,3 +1,18 @@
-* {
-    background-color: beige;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+
+div {
+    margin: 2rem;
+    border: 1px solid black;
 }

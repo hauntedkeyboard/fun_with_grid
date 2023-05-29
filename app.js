@@ -47,9 +47,9 @@ function makePetDiv() {
         newCard = document.querySelector("section").appendChild(card);
         newP2 = newCard.appendChild(paragraph2);
         newSpan = newCard.appendChild(span);
-        newP2.appendChild(petName);
-        newSpan.appendChild(petBreed);
-        newSpan.appendChild(petAge);
+        newP2.append(petName);
+        newSpan.append(petBreed);
+        newSpan.append(petAge);
 
         
     }
