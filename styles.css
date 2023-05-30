@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
 
 section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-    
 }
 
 div {
