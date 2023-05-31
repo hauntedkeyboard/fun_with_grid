@@ -2,20 +2,83 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    
 }
 
-header {
+body {
+    margin: 0;
+}
+
+main {
+    background-image: linear-gradient(
+        165deg,
+        #845ec2, 
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+        );
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 3s;
+}
+
+main:hover {
+    background-position: right;
+}
+
+header, 
+footer {
     display: flex;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 2em;
+    background-image: linear-gradient(
+        45deg, 
+        #845EC2,
+        #B39CD0,
+        #FBEAFF,
+        #00C9A7,
+    );
+    background-size: 500%;
+    animation: bg-animation 20s infinite alternate;
+    cursor: pointer;
+    
+    
 }
 
-section {
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+header a, 
+footer a {
+    margin: 2em;
+}
+
+article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 div {
     margin: 2rem;
     border: 1px solid black;
+}
+
+
+p {
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
 }

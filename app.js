@@ -37,19 +37,19 @@ function makePetDiv() {
 
     for (pet in petsArray) {
         const card = document.createElement("div");
-        const paragraph2 = document.createElement("p2");
-        const span = document.createElement("span");
-        let petName = document.createTextNode(`Name: ${petsArray[pet]["name"]}`);
-        let petBreed = document.createTextNode(`Breed: ${petsArray[pet]["breed"]}`);
-        let petAge = document.createTextNode(`Age: ${petsArray[pet]["age"]}`);
+        const paragraph = document.createElement("p");
+        // const span = document.createElement("span");
+        let petName = document.createTextNode(` Name: ${petsArray[pet]["name"]} `);
+        let petBreed = document.createTextNode(` Breed: ${petsArray[pet]["breed"]} `);
+        let petAge = document.createTextNode(` Age: ${petsArray[pet]["age"]}`);
 
         
-        newCard = document.querySelector("section").appendChild(card);
-        newP2 = newCard.appendChild(paragraph2);
-        newSpan = newCard.appendChild(span);
-        newP2.append(petName);
-        newSpan.append(petBreed);
-        newSpan.append(petAge);
+        newCard = document.querySelector("article").appendChild(card);
+        newP = newCard.appendChild(paragraph);
+        // newSpan = newCard.appendChild(span);
+        newP.appendChild(petName);
+        newP.appendChild(petBreed);
+        newP.appendChild(petAge);
 
         
     }
